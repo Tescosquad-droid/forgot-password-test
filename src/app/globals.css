@@ -38,6 +38,7 @@ body {
   border-color: #bcbcbc;
   font-size: 30px;
   text-align: center;
+  color: black;
 }
 .input-otp:focus {
   border-color: #1E90FF;
