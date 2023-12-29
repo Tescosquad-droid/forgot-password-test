@@ -44,8 +44,9 @@ body {
   outline: none;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .outer-border {
-    border-radius: 0px;
+    border: none;
   }
 }
+
