@@ -48,6 +48,7 @@ body {
 @media (max-width: 500px) {
   .outer-border {
     border: none;
+    margin-top: 25px;
   }
 }
 
