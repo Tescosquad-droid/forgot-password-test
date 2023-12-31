@@ -12,6 +12,21 @@ function autoNext(id: number, key: string, code: string) {
   } else if (key === "Backspace") {
     document.getElementById(`${id - 1}`)?.focus()
   }
+  let focusedInput = document.getElementById(`${id}`)?.innerHTML
+  const content = focusedInput
+  if (typeof content === 'string' && content?.length > 1) {
+    const letter1 = content.slice(0, 1)
+    const letter2 = content.slice(1, 2)
+    const letter3 = content.slice(2, 3)
+    const letter4 = content.slice(3, 4)
+
+    const inputArray = [letter1, letter2, letter3, letter4];
+    for (let i = 0; i < inputArray.length; i++) {
+      const element = inputArray[i];
+      focusedInput = element
+      id++
+    }
+  }
 }
 
 export default function Home() {
